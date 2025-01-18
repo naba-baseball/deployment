@@ -5,14 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "node src/mod.js"
+    "build": "node --env-file-if-exists=.env src/mod.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "aws4fetch": "^1.0.20",
-    "dotenv": "^16.4.7",
     "fs-extra": "^11.3.0",
     "tar": "^7.4.3",
     "yocto-spinner": "^0.1.2"
