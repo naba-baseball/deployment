@@ -1,11 +1,11 @@
-import { AwsClient } from "https://esm.sh/aws4fetch@1.0.17";
+import { AwsClient } from "aws4fetch";
 import {
   R2_ACCESS_KEY,
   R2_BUCKET,
   R2_ENDPOINT,
   R2_SECRET_ACCESS_KEY,
 } from "./env.ts";
-import type { Spinner } from "./deps.ts";
+import type { Spinner } from "@std/cli/unstable-spinner";
 
 export async function downloadTarGz(spinner: Spinner) {
   const client = new AwsClient({

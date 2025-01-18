@@ -1,5 +1,14 @@
 {
   "tasks": {
     "build": "deno run --allow-read --allow-write --allow-env --allow-net src/mod.ts"
+  },
+  "imports": {
+    "@std/archive": "jsr:@std/archive@^0.225.4",
+    "@std/cli": "jsr:@std/cli@^1.0.10",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.3",
+    "@std/fs": "jsr:@std/fs@^1.0.9",
+    "@std/io": "jsr:@std/io@^0.225.0",
+    "@std/tar": "jsr:@std/tar@^0.1.4",
+    "aws4fetch": "npm:aws4fetch@^1.0.20"
   }
 }
