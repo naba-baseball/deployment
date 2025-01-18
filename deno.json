@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "build": "deno run --allow-read --allow-write --allow-env --allow-net src/mod.ts"
+    "build": "deno run --allow-read --allow-write --allow-env --allow-net src/mod.ts",
+    "compile": "deno compile --output ./build --allow-read --allow-write --allow-env --allow-net src/mod.ts"
   },
   "imports": {
     "@std/archive": "jsr:@std/archive@^0.225.4",
